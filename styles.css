@@ -1,0 +1,331 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('белая.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    user-select: none; /* Отключение выделения текста */
+}
+
+h1, h2, nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #ff6347;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #ff6347, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1:hover, h2:hover {
+    color: #ff6347;
+    transform: none;
+}
+
+.breeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.breed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.breed p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.breed img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.breed img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    transform: scale(1.2);
+}
+
+section {
+    text-align: left;
+    margin-left: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #ff6347;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.intro-text p {
+    margin-bottom: 10px;
+}
+
+.intro-text h2 {
+    text-align: center;
+    color: #ff6347;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.styled-button {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin: 10px; /* Добавляем немного отступа между кнопками */
+}
+
+.styled-button:hover {
+    transform: scale(1.1); /* Увеличиваем при наведении */
+}
+
+/* Зеленая кнопка "Сохранить" */
+.red {
+    background-color: #28a745;
+}
+
+.red:hover {
+    background-color: #218838; /* Темнее на hover */
+}
+
+/* Красная кнопка "Вернуться на главную" */
+.blue {
+    background-color: #ff6347;
+}
+
+.blue:hover {
+    background-color: #e55342; /* Темнее на hover */
+}
+
+/* Голубая кнопка "Смотреть анкеты" */
+.green {
+    background-color: #4682b4;
+}
+
+.green:hover {
+    background-color: #3b6b8e; /* Темнее на hover */
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    text-align: center; /* Центрируем кнопки */
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+/* Основные стили для формы */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для меток */
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Стили для всех полей ввода */
+input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Отступ снизу */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стили для поля с фокусом */
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+    outline: none;
+}
+
+/* Плавный эффект изменения фона для textarea */
+textarea {
+    resize: vertical;
+}
+
+.profile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.profile-card:last-child {
+    border-bottom: none;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Добавить в конец файла styles.css */
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff6347;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Стили для статистики */
+.stats {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .breed {
+        width: 100%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Породы кошек">
+    <meta name="description" content="Узнайте о популярных породах кошек, их особенностях и характеристиках.">
+    <meta name="keywords" content="породы кошек, виды кошек, кошачьи породы, описание пород кошек">
+    <title>Породы кошек</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем внешний файл CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Породы кошек</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="breeds.html">Породы</a></li>
+                <li><a href="care.html">Уход</a></li>
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="404.html">404</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>О популярных породах кошек</h2>
+            <p>На этой странице мы расскажем вам о самых популярных породах кошек. Каждая порода имеет свои особенности, характер и предпочтения в уходе. Вы найдете здесь основные характеристики и фотографии для каждой породы.</p>
+        </section>
+
+        <section>
+            <h2>Галерея пород кошек</h2>
+            <div class="breeds">
+                <div class="breed">
+                    <img src="сиамская.jpg" alt="Сиамская кошка">
+                    <p>Сиамская кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="персидская.jpg" alt="Персидская кошка">
+                    <p>Персидская кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="мейнккун.jpg" alt="Мейн-кун">
+                    <p>Мейн-кун</p>
+                </div>
+                <div class="breed">
+                    <img src="бенгальская.jpg" alt="Бенгальская кошка">
+                    <p>Бенгальская кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="британскаякороткошерстная.jpg" alt="Британская короткошёрстная кошка">
+                    <p>Британская короткошёрстная</p>
+                </div>
+                <div class="breed">
+                    <img src="рэгдолл.jpg" alt="Рэгдолл">
+                    <p>Рэгдолл</p>
+                </div>
+                <div class="breed">
+                    <img src="сибирская.jpg" alt="Сибирская кошка">
+                    <p>Сибирская кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="абиссинская.jpg" alt="Абиссинская кошка">
+                    <p>Абиссинская кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="ориентальная.jpg" alt="Ориентальная кошка">
+                    <p>Ориентальная кошка</p>
+                </div>
+                <div class="breed">
+                    <img src="шотландская.jpg" alt="Шотландская вислоухая кошка">
+                    <p>Шотландская вислоухая</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Информация о породах</h2>
+            <p>Каждая порода кошек имеет свои уникальные особенности. Например, Сиамская кошка известна своей активностью и любопытством, в то время как Персидская кошка отличается спокойным и независимым характером. Мейн-кун — одна из самых крупных пород кошек, а Бенгальская кошка выделяется своими экзотическими пятнами.</p>
+            <p>Для каждой породы важно понимать её характер, потребности в уходе и предпочтения. Важно также учитывать особенности кормления и ухода за шерстью, которые могут различаться в зависимости от породы.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Сайт о котах</p>
+    </footer>
+
+    <script>
+        // Отключение контекстного меню (клик правой кнопкой мыши)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Отключение контекстного меню
+        });
+
+        // Отключение клавиш Ctrl+C и Ctrl+V (копирование и вставка)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'C' || event.key === 'V')) {
+                alert('Копирование или вставка запрещено!');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

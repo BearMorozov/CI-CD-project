@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Анкета владельца кошки">
+    <meta name="description" content="Форма регистрации владельца кошки для участия в форуме. Заполните анкету и присоединяйтесь к обсуждениям.">
+    <meta name="keywords" content="анкета, форум, кошки, коты, регистрация">
+    <title>Анкета владельца кошки</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Анкета владельца кошки</h1>
+    </header>
+
+    <main>
+        <form action="404.html" method="GET">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            
+            <label for="cat-name">Имя вашей кошки:</label>
+            <input type="text" id="cat-name" name="cat_name" placeholder="Введите имя вашей кошки" required>
+            
+            <label for="cat-breed">Порода вашей кошки:</label>
+            <select id="cat-breed" name="cat_breed" required>
+                <option value="">Выберите породу</option>
+                <option value="siamese">Сиамская</option>
+                <option value="persian">Персидская</option>
+                <option value="maine-coon">Мейн-кун</option>
+                <option value="bengal">Бенгальская</option>
+                <option value="bengal">Британская короткошёрстная</option>
+                <option value="bengal">Рэгдолл</option>
+                <option value="bengal">Сибирская кошка</option>
+                <option value="bengal">Абиссинская кошка</option>
+                <option value="bengal">Ориентальная кошка</option>
+                <option value="bengal">Шотландская вислоухая</option>
+                <option value="other">Другая</option>
+            </select>
+            
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            
+            <label for="message">Краткое сообщение о вас:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Расскажите немного о себе" required></textarea>
+            
+            <div class="button-container">
+                <button type="submit" class="styled-button red">Сохранить</button>
+                <a href="index.html" class="styled-button blue">Вернуться на главную</a>
+                <a href="profiles.html" class="styled-button green">Смотреть анкеты</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2025 Форум о кошках</p>
+    </footer>
+
+    <script>
+        // Отключение контекстного меню
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Отключение клавиш Ctrl+C, Ctrl+V и других запрещенных комбинаций
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'C' || event.key === 'V' || event.key === 'U' || event.key === 'S')) {
+                alert('Эта операция запрещена!');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

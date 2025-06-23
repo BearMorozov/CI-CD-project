@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registerForm" action="register.php" method="POST">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Подтвердите пароль:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <label for="user_type">Тип пользователя:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="author">Автор</option>
+                <option value="admin">Администратор</option>
+            </select>
+
+            <div class="button-container">
+                <button type="submit" class="styled-button green">Зарегистрироваться</button>
+                <a href="index.html" class="styled-button blue">На главную</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Сайт о котах</p>
+    </footer>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Пароли не совпадают!');
+            }
+        });
+    </script>
+</body>
+</html>

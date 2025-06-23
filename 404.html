@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            user-select: none; /* Отключение выделения текста */
+        }
+
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            background-color: #e5533d;
+        }
+    </style>
+    <script>
+        // Перенаправление через 5 секунд
+        setTimeout(() => {
+            window.location.href = 'index.html'; // Укажите путь к главной странице
+        }, 5000);
+
+        // Отключение контекстного меню (клик правой кнопкой мыши)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Отключение контекстного меню
+        });
+
+        // Отключение клавиш Ctrl+C и Ctrl+V (копирование и вставка)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'C' || event.key === 'V')) {
+                alert('Копирование или вставка запрещено!');
+                event.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="error-container">
+        <img src="full_screen_retina_e5f347c8e4.jpeg" alt="Кот об ошибке" />
+        <br> <!-- Прерывание строки -->
+        <p>Упс! Страница не найдена.</p>
+        <br> <!-- Прерывание строки -->
+        <p>Вы будете перенаправлены на главную через 5 секунд...</p>
+        <br> <!-- Прерывание строки -->
+        <a href="index.html">Перейти на главную сейчас</a>
+    </div>
+</body>
+</html>
