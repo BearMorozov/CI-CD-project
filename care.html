@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Уход за кошками">
+    <meta name="description" content="Советы по уходу за кошками, их здоровьем и благополучием.">
+    <meta name="keywords" content="уход за кошками, советы по уходу, здоровье кошек, гигиена кошек, кормление кошек, кошачий уход">
+    <title>Уход за кошками</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Уход за кошками</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="breeds.html">Породы</a></li>
+                <li><a href="care.html">Уход</a></li>
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="404.html">404</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="tips">
+            <h2>Основные советы по уходу за кошками:</h2>
+            <p><strong>1. Правильное кормление:</strong> Для здоровья вашей кошки важно подобрать сбалансированный корм, который отвечает её возрасту, размеру и состоянию здоровья. Не забывайте о свежей воде!</p>
+            <p><strong>2. Гигиенические процедуры:</strong> Регулярно чистите ушки, зубы и когти вашей кошки. Уход за шерстью также важен — расчёсывайте её, особенно если кошка длинношерстная.</p>
+            <p><strong>3. Вакцинация и профилактика:</strong> Регулярно посещайте ветеринара для вакцинации и профилактики заболеваний. Не забывайте о профилактике паразитов, таких как блохи и клещи.</p>
+            <p><strong>4. Устройство для отдыха и игры:</strong> Кошки нуждаются в физических и умственных нагрузках. Обеспечьте её игрушками и когтеточкой, а также уютным местом для отдыха.</p>
+            <p><strong>5. Внимание и любовь:</strong> Не забывайте уделять внимание своей кошке. Общение и любовь важны для её психологического здоровья.</p>
+        </section>
+
+        <section>
+            <h2>Дополнительная информация:</h2>
+            <p>Если вы хотите узнать больше о правильном уходе за кошками, посетите другие разделы нашего сайта.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Сайт о котах</p>
+    </footer>
+
+    <script>
+        // Отключение контекстного меню (клик правой кнопкой мыши)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Отключение контекстного меню
+        });
+
+        // Отключение клавиш Ctrl+C и Ctrl+V (копирование и вставка)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'C' || event.key === 'V')) {
+                alert('Копирование или вставка запрещено!');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
